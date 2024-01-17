@@ -84,6 +84,9 @@ class UsersController implements RouteCollection {
         UserUncheckedUpdateInput(
           name: data['name'] is String ? PrismaUnion.$1(data['name']) : null,
           email: data['email'] is String ? PrismaUnion.$1(data['email']) : null,
+          password: data['password'] is String
+              ? PrismaUnion.$1(data['password'])
+              : null,
         ),
       ),
     );
