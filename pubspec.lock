@@ -364,10 +364,11 @@ packages:
   spry:
     dependency: "direct main"
     description:
-      path: "../spry/packages/spry"
-      relative: true
-    source: path
-    version: "3.1.1"
+      name: spry
+      sha256: da852e1aa0a6dfedf0e3352c71e20d06b4e6602f1b98cbfabe5e2e18032c59e9
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.2"
   stack_trace:
     dependency: transitive
     description:

@@ -2,16 +2,14 @@ name: blog
 description: A sample command-line application.
 version: 1.0.0
 publish_to: 'none'
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/medz/blog-server-with-dart
 
 environment:
   sdk: ^3.2.3
 
-# Add regular dependencies here.
 dependencies:
   orm: 4.0.0-beta
-  spry:
-    path: ../spry/packages/spry
+  spry: ^3.1.2
 
 dev_dependencies:
   lints: ^2.1.0
