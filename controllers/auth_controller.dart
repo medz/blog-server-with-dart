@@ -5,7 +5,9 @@ import 'package:spry/spry.dart';
 
 import '../dtos/login_dto.dart';
 import '../dtos/register_dto.dart';
+import '../extensions/request+access_token.dart';
 import '../extensions/request+prisma.dart';
+import '../middleware/authenticator.dart';
 import '../prisma/generated_dart_client/prisma.dart';
 import '../resources/access_token_resource.dart';
 import '../resources/user_resource.dart';
@@ -17,6 +19,9 @@ class AuthController implements RouteCollection {
   void boot(RoutesBuilder routes) {
     routes.post('login', login);
     routes.post('register', register);
+    routes.group(middleware: [const Authenticator()], (routes) {
+      routes.get('logout', logout);
+    });
   }
 
   Future<AccessTokenResource> login(HttpRequest request) async {
@@ -65,5 +70,24 @@ class AuthController implements RouteCollection {
     );
 
     return UserResource(user, includeEmail: true);
+  }
+
+  Future<Map> logout(HttpRequest request) async {
+    final accessToken = await request.prisma.accessToken.delete(
+      where: AccessTokenWhereUniqueInput(
+        token: request.accessToken.token,
+      ),
+      include: AccessTokenInclude(
+        user: PrismaUnion.$2(
+          AccessTokenUserArgs(
+            select: UserSelect(name: true),
+          ),
+        ),
+      ),
+    );
+
+    return {
+      'message': "You've been logged out, Bye ${accessToken?.user?.name}!",
+    };
   }
 }

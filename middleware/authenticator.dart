@@ -7,8 +7,8 @@ import '../exceptions/unauthenticated_exception.dart';
 import '../extensions/request+prisma.dart';
 import '../prisma/generated_dart_client/prisma.dart';
 
-class AccessTokenAuthenticator implements Middleware {
-  const AccessTokenAuthenticator();
+class Authenticator implements Middleware {
+  const Authenticator();
 
   @override
   Future<void> process(HttpRequest request, Next next) async {
@@ -25,10 +25,12 @@ class AccessTokenAuthenticator implements Middleware {
 
     request.locals[#access_token] = accessToken;
     request.locals[#user] = accessToken.user;
+
+    return next();
   }
 }
 
-extension on AccessTokenAuthenticator {
+extension on Authenticator {
   /// Gets the `Bearer` token from the `Authorization` header.
   String bearerToken(HttpRequest request) {
     final header = request.headers.value('Authorization');

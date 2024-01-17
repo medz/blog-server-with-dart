@@ -2,6 +2,7 @@ import 'package:spry/spry.dart';
 
 import 'controllers/auth_controller.dart';
 import 'controllers/posts_controller.dart';
+import 'controllers/users_controller.dart';
 import 'exceptions/convert_json_exception_filter.dart';
 import 'middleware/prisma_middleware.dart';
 
@@ -12,6 +13,7 @@ void main() async {
   app.exceptions.addFilter(const ConvertJsonExceptionFilter());
 
   app.register(const AuthController());
+  app.register(const UsersController());
   app.register(const PostsController());
 
   app.run(port: 3000);

@@ -9,6 +9,11 @@ class UserResource extends Resource<Map<String, Object?>> {
 
   const UserResource(this.user, {this.includeEmail = false});
 
+  static Resource<List<Map<String, Object?>>> collection(
+      Iterable<User> resources) {
+    return Resource.collection(resources.map(UserResource.new));
+  }
+
   @override
   Map<String, Object?> toJson() {
     return {

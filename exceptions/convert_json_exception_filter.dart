@@ -19,9 +19,6 @@ class ConvertJsonExceptionFilter implements ExceptionFilter<Object> {
       _ => (500, make(500, 'Internal Server Error')),
     };
 
-    print(source.exception);
-    print(source.stackTrace);
-
     request.response.headers.contentType = ContentType.json;
     request.response.statusCode = status;
     request.response.write(json.encode(body));
