@@ -237,10 +237,10 @@ packages:
     dependency: "direct main"
     description:
       name: orm
-      sha256: "1917a0ff408b3491c048c17734f7ea4eca702d64afeb95805aa091a58e81e30c"
+      sha256: "87e13cf4178015409473e6ea11247e933a18df5240d5204cdd5aba64b9cab361"
       url: "https://pub.dev"
     source: hosted
-    version: "4.1.0"
+    version: "4.2.0"
   package_config:
     dependency: transitive
     description:
@@ -469,10 +469,10 @@ packages:
     dependency: transitive
     description:
       name: webfetch
-      sha256: "08cb156e0b476447da5c9d2cd30a4ca7d63270310153fc351aa536217d73d859"
+      sha256: "42775e831b0d8af643a355e71a39adad2ca76ea9f73b06de47be075c9f45f90a"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.15"
+    version: "0.0.16"
   webkit_inspection_protocol:
     dependency: transitive
     description:
