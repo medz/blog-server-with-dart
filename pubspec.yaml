@@ -9,7 +9,7 @@ environment:
 
 dependencies:
   orm: 5.0.4
-  spry: ^3.1.2
+  spry: ^4.0.0
 
 dev_dependencies:
   lints: ^4.0.0

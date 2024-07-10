@@ -317,10 +317,10 @@ packages:
     dependency: transitive
     description:
       name: routingkit
-      sha256: bd0f94f96c3869e7dae0601b2ff218f7402d1d76d6bfb4b2387a1f4071968c6b
+      sha256: cbd2b711f534cfc7596e938e68dae6dd22b4e5bddb4f8b5bee0e9f1ff9f54823
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.0"
+    version: "1.1.0"
   shelf:
     dependency: transitive
     description:
@@ -381,10 +381,10 @@ packages:
     dependency: "direct main"
     description:
       name: spry
-      sha256: da852e1aa0a6dfedf0e3352c71e20d06b4e6602f1b98cbfabe5e2e18032c59e9
+      sha256: "36aa248b895c868d47381f9c5e283fcca696105659589ec19fc930c10b8fed1c"
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.2"
+    version: "4.0.0"
   stack_trace:
     dependency: transitive
     description:
@@ -506,4 +506,4 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
-  dart: ">=3.4.1 <4.0.0"
+  dart: ">=3.4.3 <4.0.0"
