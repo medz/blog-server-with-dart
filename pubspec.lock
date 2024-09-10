@@ -229,10 +229,10 @@ packages:
     dependency: transitive
     description:
       name: meta
-      sha256: d584fa6707a52763a52446f02cc621b077888fb63b93bbcb1143a7be5a0c0c04
+      sha256: bdb68674043280c3428e9ec998512fb681678676b3c54e773629ffe74419f8c7
       url: "https://pub.dev"
     source: hosted
-    version: "1.11.0"
+    version: "1.15.0"
   mime:
     dependency: transitive
     description:
@@ -253,10 +253,10 @@ packages:
     dependency: "direct main"
     description:
       name: orm
-      sha256: "1ddd306be8d569a6dbf081ff885c80fa59fd0ab54eefd6cce05d195be5f49685"
+      sha256: a2a55a6d1644060cbf577dc4e57aae6c2c9e9dde08d9477e8a5cc3c0d7c3af20
       url: "https://pub.dev"
     source: hosted
-    version: "5.0.4"
+    version: "5.0.6"
   package_config:
     dependency: transitive
     description:
@@ -317,10 +317,10 @@ packages:
     dependency: transitive
     description:
       name: routingkit
-      sha256: bd0f94f96c3869e7dae0601b2ff218f7402d1d76d6bfb4b2387a1f4071968c6b
+      sha256: "334f08a3a64526a56fcfd2a2c05d7abe8362874cc7fb2ce6f87574cd8689223f"
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.0"
+    version: "4.1.0"
   shelf:
     dependency: transitive
     description:
@@ -381,10 +381,10 @@ packages:
     dependency: "direct main"
     description:
       name: spry
-      sha256: da852e1aa0a6dfedf0e3352c71e20d06b4e6602f1b98cbfabe5e2e18032c59e9
+      sha256: a637bfa8be2dee3d54e32a2212d57ea71ea20515826e677e27df2e7b168e9920
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.2"
+    version: "5.2.0"
   stack_trace:
     dependency: transitive
     description:
@@ -469,26 +469,26 @@ packages:
     dependency: transitive
     description:
       name: web
-      sha256: "4188706108906f002b3a293509234588823c8c979dc83304e229ff400c996b05"
+      sha256: d43c1d6b787bf0afad444700ae7f4db8827f701bc61c255ac8d328c6f4d52062
       url: "https://pub.dev"
     source: hosted
-    version: "0.4.2"
+    version: "1.0.0"
   web_socket_channel:
     dependency: transitive
     description:
       name: web_socket_channel
-      sha256: "939ab60734a4f8fa95feacb55804fa278de28bdeef38e616dc08e44a84adea23"
+      sha256: d88238e5eac9a42bb43ca4e721edba3c08c6354d4a53063afaa568516217621b
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.3"
+    version: "2.4.0"
   webfetch:
     dependency: transitive
     description:
       name: webfetch
-      sha256: ad651c7ab3829c653732facf3eefa03ef6e023575ee8172b8b60bbdf117cdfd9
+      sha256: "2724933db80e1622baec57d5096b9ae5b1f0a396e047679a91ffeb60bcd5c0f2"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.17"
+    version: "0.1.0"
   webkit_inspection_protocol:
     dependency: transitive
     description:
@@ -506,4 +506,4 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
-  dart: ">=3.4.1 <4.0.0"
+  dart: ">=3.4.3 <4.0.0"
