@@ -8,7 +8,7 @@ environment:
   sdk: ^3.2.3
 
 dependencies:
-  orm: 5.0.6
+  orm: 5.0.7
   spry: ^5.0.0
 
 dev_dependencies:
