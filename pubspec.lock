@@ -253,10 +253,10 @@ packages:
     dependency: "direct main"
     description:
       name: orm
-      sha256: "4010c8373d314e6c3729e8e954dbaf5ec48b8c66b2fed6046893ff0f5a05a728"
+      sha256: "3e3413f5c55ff2ac09c19f5e27f1028bed8de892c4a7233655882c95373cc9c0"
       url: "https://pub.dev"
     source: hosted
-    version: "5.1.0"
+    version: "5.2.0"
   package_config:
     dependency: transitive
     description:
@@ -506,4 +506,4 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
-  dart: ">=3.4.3 <4.0.0"
+  dart: ">=3.5.0 <4.0.0"
